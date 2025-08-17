@@ -4,11 +4,12 @@
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
+// 对传入元素切换 active 类，用于显示/隐藏或状态切换。
 
 
 // sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
+const sidebar = document.querySelector("[data-sidebar]");//返回文档中第一个匹配该选择器的元素
+//切换 active 类，用于显示/隐藏或状态切换。
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
@@ -17,6 +18,10 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 
 // testimonials variables
+// 读取其内部头像、标题、文本
+//设置到弹窗中的img/title/text占位元素
+//调用 testimonialsModalFunc 切换弹窗与遮罩层 active
+//关闭：点击关闭按钮或遮罩 overlay 同样调用切换函数
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
@@ -156,4 +161,33 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
 
   });
+}
+
+
+
+// WeChat QR Code Modal
+const wechatBtn = document.querySelector("[data-wechat-btn]");
+const wechatModalContainer = document.querySelector("[data-wechat-modal-container]");
+const wechatOverlay = document.querySelector("[data-wechat-overlay]");
+const wechatModalCloseBtn = document.querySelector("[data-wechat-modal-close-btn]");
+
+const toggleWechatModal = function () {
+  if (wechatModalContainer) {
+    wechatModalContainer.classList.toggle("active");
+  }
+}
+
+if (wechatBtn) {
+  wechatBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    toggleWechatModal();
+  });
+}
+
+if (wechatOverlay) {
+  wechatOverlay.addEventListener("click", toggleWechatModal);
+}
+
+if (wechatModalCloseBtn) {
+  wechatModalCloseBtn.addEventListener("click", toggleWechatModal);
 }

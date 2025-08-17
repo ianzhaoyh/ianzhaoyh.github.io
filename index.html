@@ -42,15 +42,14 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/Profile.jpg" alt="Yunhao Zhao" width="80">
         </figure>
 
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
-
-          <p class="title">Web developer</p>
+          <div class="info-content">
+          <h1 class="name" title="Yunhao Zhao">Yunhao Zhao <span class="title" style="font-weight: normal; font-size: 0.8em;">(Ian)</span></h1>
         </div>
 
+        <button class="info_more-btn" data-sidebar-btn>
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
 
@@ -74,7 +73,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a href="mailto:zyhian2004@gmail.com" class="contact-link">zyhian2004@gmail.com</a></a>
             </div>
 
           </li>
@@ -88,7 +87,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <a href="tel:+86-13951905805" class="contact-link">+86-13951905805</a>
             </div>
 
           </li>
@@ -102,7 +101,7 @@
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
 
-              <time datetime="1982-06-23">June 23, 1982</time>
+              <time datetime="2004-5-11">May 11, 2004</time>
             </div>
 
           </li>
@@ -116,32 +115,26 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Nanjing, Jiangsu, China</address>
             </div>
 
           </li>
 
         </ul>
 
-        <div class="separator"></div>
+         <div class="separator"></div>
 
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://github.com/ianzhaoyh" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="#" class="social-link" data-wechat-btn>
+              <ion-icon name="logo-wechat"></ion-icon>
             </a>
           </li>
 
@@ -209,17 +202,19 @@
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            I am a final-year undergraduate student at the Faculty of Innovation Engineering, 
+            Macau University of Science and Technology, majoring in Computer Science. 
+            My academic and project experience has provided me with a solid foundation in both front-end and back-end web development, 
+            as well as core computer science concepts through projects in CPU design, compiler construction, and network engineering.
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+           Currently, my passion lies in the field of Artificial Intelligence, 
+           with a specific focus on cutting-edge research in humanoid robotics. 
+           I am actively exploring reinforcement learning and imitation learning techniques to develop more advanced and capable robotic systems. 
+           My goal is to contribute to the new era of embodied intelligence and help create intelligent agents that can physically interact with and learn from the world.
+
+
           </p>
         </section>
 
@@ -308,7 +303,7 @@
           - testimonials
         -->
 
-        <section class="testimonials">
+        <!-- <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -334,9 +329,9 @@
                 </div>
 
               </div>
-            </li>
+            </li> -->
 
-            <li class="testimonials-item">
+            <!-- <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
@@ -404,7 +399,7 @@
 
           </ul>
 
-        </section>
+        </section> -->
 
 
         <!--
@@ -456,7 +451,7 @@
           - clients
         -->
 
-        <section class="clients">
+        <!-- <section class="clients">
 
           <h3 class="h3 clients-title">Clients</h3>
 
@@ -500,9 +495,9 @@
 
           </ul>
 
-        </section>
+        </section> -->
 
-      </article>
+      </article> 
 
 
 
@@ -512,191 +507,32 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+     <article class="resume" data-page="resume">
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
-        <section class="timeline">
+        <section class="resume-content" style="padding: 15px;">
+          
+          <!-- Embedded PDF Viewer -->
+          <iframe 
+            src="./assets/pdf/CV.pdf" 
+            style="width: 100%; height: 75vh; border: 1px solid var(--jet);" 
+            title="My Resume PDF">
+          </iframe>
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
+          <!-- Download Button -->
+          <div style="text-align: center; margin-top: 30px;">
+            <a href="./assets/pdf/My_CV.pdf" download="Yunhao_Zhao_CV.pdf" class="form-btn" style="display: inline-block; text-decoration: none; max-width: 200px;">
+              <ion-icon name="download-outline"></ion-icon>
+              <span>Download CV</span>
+            </a>
           </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
 
         </section>
 
       </article>
-
 
 
 
@@ -1181,6 +1017,21 @@
   </main>
 
 
+  <!--
+    - WECHAT QR CODE MODAL
+  -->
+  <div class="qr-modal-container" data-wechat-modal-container>
+    <div class="overlay" data-wechat-overlay></div>
+    <div class="qr-modal">
+      <button class="modal-close-btn" data-wechat-modal-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <div class="qr-box">
+        <img src="./assets/images/Wechat.JPG" alt="WeChat QR Code">
+      </div>
+      <h4 class="h4 modal-title">Scan with WeChat</h4>
+    </div>
+  </div>
 
 
 

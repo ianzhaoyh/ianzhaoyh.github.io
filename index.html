@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yunhao Zhao | Robotics Researcher</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ══════════════ SPLASH ══════════════ -->
+<div class="splash" id="splash">
+  <canvas id="particleCanvas"></canvas>
+  <div class="splash-hint">click to enter</div>
+</div>
+
+<!-- ══════════════ MAIN SITE ══════════════ -->
+<div class="site" id="mainSite">
+
+  <!-- Left Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <!-- Identity -->
+      <div class="identity">
+        <div class="avatar-wrap">
+          <div class="avatar-placeholder">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M14 66c0-14.36 11.64-26 26-26s26 11.64 26 26" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+        </div>
+        <h1 class="my-name">Yunhao Zhao</h1>
+        <p class="my-ian">Ian</p>
+        <p class="my-pronunciation">( Yi-an · not "lan" )</p>
+        <p class="my-title">Pre-Researcher in Robotics</p>
+        <p class="my-affiliation">CS / AI / Robotics</p>
+      </div>
+
+      <!-- Nav -->
+      <nav class="side-nav">
+        <a href="#about" class="nav-item active" data-section="about">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><circle cx="10" cy="6" r="4"/><path d="M2 18c0-4.418 3.582-8 8-8s8 3.582 8 8"/></svg>
+          About
+        </a>
+        <a href="#news" class="nav-item" data-section="news">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M3 3h11v14H3zM14 6h3v11H6v-3"/></svg>
+          Recent News
+        </a>
+        <a href="#research" class="nav-item" data-section="research">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M10 2l2.5 5H18l-4.5 3.5L15 16l-5-3.5L5 16l1.5-5.5L2 7h5.5z"/></svg>
+          Research
+        </a>
+        <a href="#publications" class="nav-item" data-section="publications">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M4 2h12v16H4zM7 6h6M7 9h6M7 12h4"/></svg>
+          Publications
+        </a>
+        <a href="#blog" class="nav-item" data-section="blog">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M3 3h14v10H7l-4 4z"/></svg>
+          Blog
+        </a>
+        <a href="#cv" class="nav-item" data-section="cv">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M6 2h8l4 4v12H2V2h4zM7 10h6M7 13h4"/></svg>
+          CV
+        </a>
+      </nav>
+    </div>
+
+    <!-- Social links -->
+    <div class="sidebar-bottom">
+      <div class="social-links">
+        <a href="mailto:zyhian2004@gmail.com" title="Email">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="M2 4l8 6 8-6"/></svg>
+        </a>
+        <a href="https://github.com/ianzhaoyh" target="_blank" title="GitHub">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.138 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"/></svg>
+        </a>
+        <a href="#" title="LinkedIn">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M4.5 3A1.5 1.5 0 113 4.5 1.5 1.5 0 014.5 3zM3 7h3v10H3zm5.5 0H11v1.4h.03C11.6 7.55 12.9 7 14.1 7 17.1 7 17.5 9 17.5 11.5V17h-3v-4.9c0-1.17-.02-2.67-1.63-2.67S11 10.8 11 12v5H8.5z"/></svg>
+        </a>
+      </div>
+      <p class="sidebar-copy">&copy; 2026 Yunhao Zhao</p>
+    </div>
+  </aside>
+
+  <!-- Mobile Header -->
+  <header class="mobile-header" id="mobileHeader">
+    <span class="mobile-name">Yunhao Zhao</span>
+    <button class="burger" id="burger" onclick="toggleSidebar()">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Content -->
+  <main class="content" id="content">
+
+    <!-- ABOUT -->
+    <section class="panel" id="about">
+      <h2 class="panel-title">About Me</h2>
+      <div class="about-body">
+        <p>Hi there! I'm <strong>Yunhao Zhao</strong> — you can call me <strong>Ian</strong> <span class="muted">(pronounced "ee-en", not "lan"!)</span>.</p>
+        <p>I'm a pre-graduate researcher working at the intersection of <strong>Computer Science</strong>, <strong>Artificial Intelligence</strong>, and <strong>Robotics</strong>. I'm currently preparing for my graduate studies, with a focus on building intelligent robotic systems that can perceive, reason, and physically interact with the real world.</p>
+        <p>I believe the next leap in AI will come from <em>embodied intelligence</em> — machines that learn not just from data, but from doing. My goal is to contribute to that future.</p>
+        <div class="tag-row">
+          <span class="tag">Robotics</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Computer Vision</span>
+          <span class="tag">Embodied AI</span>
+          <span class="tag">Robot Learning</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENT NEWS -->
+    <section class="panel" id="news">
+      <h2 class="panel-title">Recent News</h2>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">Apr 2026</span>
+          <span class="news-text">Personal website launched! Welcome to my corner of the internet.</span>
+        </li>
+        <li>
+          <span class="news-date">Mar 2026</span>
+          <span class="news-text">Accepted into [University] for M.S. in Robotics — excited for the next chapter.</span>
+        </li>
+        <li>
+          <span class="news-date">Jan 2026</span>
+          <span class="news-text">Started working on a new project exploring sim-to-real transfer for manipulation tasks.</span>
+        </li>
+        <li>
+          <span class="news-date">Dec 2025</span>
+          <span class="news-text">Completed undergraduate thesis on vision-based robot grasping.</span>
+        </li>
+        <li>
+          <span class="news-date">Sep 2025</span>
+          <span class="news-text">Began research internship at [Lab Name], working on robot learning.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="panel" id="research">
+      <h2 class="panel-title">Research</h2>
+      <div class="research-grid">
+        <div class="r-card">
+          <div class="r-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="14" y="18" width="20" height="18" rx="4"/>
+              <circle cx="20" cy="27" r="2.5" fill="currentColor"/><circle cx="28" cy="27" r="2.5" fill="currentColor"/>
+              <line x1="24" y1="18" x2="24" y2="12" stroke-linecap="round" stroke-width="2"/>
+              <circle cx="24" cy="10" r="2.5"/>
+              <line x1="12" y1="26" x2="14" y2="26" stroke-linecap="round" stroke-width="2"/>
+              <line x1="34" y1="26" x2="36" y2="26" stroke-linecap="round" stroke-width="2"/>
+              <line x1="20" y1="36" x2="20" y2="40" stroke-linecap="round"/>
+              <line x1="28" y1="36" x2="28" y2="40" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Robot Learning</h3>
+          <p>Developing algorithms that let robots acquire complex manipulation skills through interaction with their environment and self-supervised learning.</p>
+        </div>
+        <div class="r-card">
+          <div class="r-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="6"/>
+              <circle cx="24" cy="24" r="1.5" fill="currentColor"/>
+              <line x1="24" y1="4" x2="24" y2="8"/><line x1="24" y1="40" x2="24" y2="44"/>
+              <line x1="4" y1="24" x2="8" y2="24"/><line x1="40" y1="24" x2="44" y2="24"/>
+            </svg>
+          </div>
+          <h3>Computer Vision</h3>
+          <p>Building perception systems that enable robots to understand and interpret visual information from unstructured real-world environments.</p>
+        </div>
+        <div class="r-card">
+          <div class="r-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 38V20l16-10 16 10v18"/>
+              <circle cx="24" cy="26" r="6"/>
+              <path d="M24 20v-6M18 26H8M40 26H30"/>
+              <circle cx="24" cy="26" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Embodied AI</h3>
+          <p>Creating agents that learn through physical embodiment — bridging simulation and reality for robust, generalizable robotic intelligence.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="panel" id="publications">
+      <h2 class="panel-title">Publications</h2>
+      <div class="pub-list">
+        <div class="pub-item">
+          <div class="pub-year">2026</div>
+          <div class="pub-body">
+            <div class="pub-title">Paper Title Here</div>
+            <div class="pub-authors"><strong>Yunhao Zhao</strong>, Co-Author One, Co-Author Two</div>
+            <div class="pub-venue">Conference / Journal Name, 2026</div>
+            <div class="pub-links">
+              <a href="#">Paper</a>
+              <a href="#">Code</a>
+              <a href="#">Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pub-empty">
+        <p>More publications on the way...</p>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="panel" id="blog">
+      <h2 class="panel-title">Blog</h2>
+      <div class="blog-list">
+        <article class="blog-item">
+          <div class="blog-date">Apr 6, 2026</div>
+          <h3>Welcome to My Blog</h3>
+          <p>This is my first post. I'll share thoughts on robotics research, paper readings, project logs, and the occasional life update.</p>
+          <a href="#" class="read-more">Read &rarr;</a>
+        </article>
+        <article class="blog-item">
+          <div class="blog-date">Apr 1, 2026</div>
+          <h3>Getting Started with ROS2</h3>
+          <p>A walkthrough of setting up ROS2 for your first robotics project — from installation to running your first node.</p>
+          <a href="#" class="read-more">Read &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section class="panel" id="cv">
+      <h2 class="panel-title">Curriculum Vitae</h2>
+
+      <div class="cv-block">
+        <h3 class="cv-heading">Education</h3>
+        <div class="cv-entry">
+          <span class="cv-time">2026 —</span>
+          <div>
+            <div class="cv-role">M.S. in Computer Science / Robotics</div>
+            <div class="cv-place">University Name</div>
+          </div>
+        </div>
+        <div class="cv-entry">
+          <span class="cv-time">2022 — 2026</span>
+          <div>
+            <div class="cv-role">B.S. in Computer Science</div>
+            <div class="cv-place">University Name</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-block">
+        <h3 class="cv-heading">Experience</h3>
+        <div class="cv-entry">
+          <span class="cv-time">2025</span>
+          <div>
+            <div class="cv-role">Research Intern</div>
+            <div class="cv-place">Lab / Company Name</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-block">
+        <h3 class="cv-heading">Skills</h3>
+        <div class="tag-row">
+          <span class="tag">Python</span><span class="tag">C++</span><span class="tag">PyTorch</span>
+          <span class="tag">ROS / ROS2</span><span class="tag">OpenCV</span><span class="tag">Linux</span>
+          <span class="tag">CUDA</span><span class="tag">Isaac Sim</span><span class="tag">MuJoCo</span>
+        </div>
+      </div>
+
+      <a href="#" class="dl-btn">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M10 3v10M6 9l4 4 4-4M3 15v2h14v-2"/></svg>
+        Download Full CV
+      </a>
+    </section>
+
+  </main>
+</div>
+
+<script src="particles.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

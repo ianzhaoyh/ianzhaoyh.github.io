@@ -1,7 +1,7 @@
 /* ============================================================
    Canvas 2D Particle Text — "Yunhao Zhao"
    Spring physics + mouse repulsion + Perlin noise coloring
-   Vermeer palette (deep blue / golden yellow)
+   Palette tuned for LIGHT background (deep blue + deep gold)
    ============================================================ */
 
 (function () {
@@ -50,11 +50,12 @@
     return 70 * (n0 + n1 + n2);
   }
 
-  // ── Vermeer Palette ───────────────────────────────────────
+  // ── Palette tuned for LIGHT background ────────────────────
+  // Deep blues + deep antique golds — all dark enough to read on cream.
   const COLORS = [
-    '#1e3a5f', '#2b5797', '#4a7fb5',
-    '#dab769', '#f0d68a', '#f5e6c8',
-    '#8fa8c8', '#c4a44a', '#e8d5a0',
+    '#1a2942', '#1e3a5f', '#2b5797',   // deep navy → mid blue
+    '#7a5f25', '#9c7c3a', '#b8943f',   // deep gold spectrum
+    '#3a5d8a', '#5c4416', '#876527',   // mixed deeps
   ];
 
   function hexToRgb(h) {
